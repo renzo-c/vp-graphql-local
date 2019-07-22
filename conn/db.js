@@ -53,7 +53,7 @@ ServiceShift.belongsToMany(Employee, { through: EmployeeXServiceShift });
 
 //serviceshift_id -> parking
 ServiceShift.hasMany(Parking);
-//parking_id -> serciceshift
+//parking_id -> serciceshift 
 Parking.belongsTo(ServiceShift);
 
 //employee_id -> parking
